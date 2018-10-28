@@ -1,8 +1,8 @@
 function make(...params) {
-	let arrSum = [];
+	const arrSum = [];
 	arrSum.push(...params);
 	const inFunc = function(...params) {
-		for (let i = 0, len = params.length; i < len; i++) {
+		for (let i = 0, len = params.length; i < len; i += 1) {
 			if (typeof params[i] === "number")  {
 				arrSum.push(params[i]);
 			} else if (typeof params[i] === "function") {
